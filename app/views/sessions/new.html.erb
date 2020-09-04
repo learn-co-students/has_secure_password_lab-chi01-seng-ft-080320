@@ -1,0 +1,18 @@
+<h1> Please login with a username and password </h1>
+
+<% if flash[:error] %>
+<%= flash[:error] %>
+<% end %>
+
+
+<%= form_for :user, url: login_path do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= f.label :password %>
+    <%= f.text_field :password %>
+
+    <%= f.submit value: "Login" %>
+    <% end %>
+
+    <%= button_to "Sign up here", new_user_path, method: :get %>

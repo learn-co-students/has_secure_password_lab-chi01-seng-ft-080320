@@ -1,0 +1,11 @@
+<h1> Please signup with a username and password </h1>
+
+<%= form_for @user do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= f.label :password %>
+    <%= f.text_field :password %>
+
+    <%= f.submit %>
+    <% end %>
