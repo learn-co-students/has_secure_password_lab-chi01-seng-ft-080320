@@ -1,0 +1,4 @@
+<h1> Hey whats up <%= @user.name %> </h1>
+<%= button_to "signup", login_path, method: :get %>
+<%= button_to "logout", logout_path, method: :delete %>
+<%= button_to "view all users", users_path, method: :get %>
